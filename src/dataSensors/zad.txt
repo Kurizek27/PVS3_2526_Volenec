@@ -1,0 +1,22 @@
+Zadání
+
+Složka dataSensors/
+Soubory sen1.txt - sen20.txt
+Formát:
+název senzoru, hodnota
+
+Vstupní .java soubor: SensorTask.java
+
+Doplnit metodu reportReadings(String dirPath):
+> Ověří, že existuje adresář, který je zadán jako parametr ✅
+> Projede všechny soubory sen1-sen20 ✅
+> Pokud je naměřená hodnota senzoru validní, tak je uložena do listu readings
+! Validní = v rozsahu <-200.0, 500.0>
+> Pokud není validní, je uložená jako do listu invalidReadings.
+Nevalidní hodnoty si i evidují v jakém souboru a číslo řádku, ve kterém se vyskytují.
+(řádky se číslují normálně od jedničky...)
+Doplňte dle vlastní potřeby třídu InvalidReading
+> Do konzole vypsat stav: kolik jich je validních a kolik nevalidních.
+
+Link:
+https://forms.office.com/Pages/ResponsePage.aspx?id=f_BDFfkwekCetYp67EGP_1pSNPXTVBFPg7PGychWGEdUREY3WFA2UUhDN1NITjNWV0QwOUtZN05XRy4u
