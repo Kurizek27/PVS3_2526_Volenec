@@ -6,27 +6,28 @@ import java.util.List;
  * 1. Načtěte soubor data/cars.csv
  *    - přeskočte 1. řádek souboru
  *    - všechny záznamy uložte do List<Car> cars
- * 2. Implementujte metodu, která vrátí průměrnou cenu za Porsche
- * 3. Implementujte metodu, která vrátí všechny auta pod cenu "price"
- * 4. Implementujte metodu, která vypíše základní statistiky o autech na základě "performance"
+ * 2. Implementujte všechny metody
  */
 public class CarStream {
     public static void main(String[] args) {
         String path = "data/cars.csv";
         List<Car> cars = loadCars(path);
 
-        double avgPrice = getAveragePrice(cars, "Porsche");
-        System.out.println(avgPrice); // zhruba 14 000
+        // Vypište průměrnou maximální rychlost aut značky Porsche
 
-        List<Car> budgetCars = filterByPrice(cars, 8_000);
-        budgetCars.forEach(System.out::println); // 8 aut
+        // Vypište všechny auta levnější než 8000 USD
 
-        printStatistics(cars);
+        // Vypište statistiky o autech na základě jejich "Performance"
+
+        // Vypište všechny auta značky Bugatti nad 420 HP
+
+        // Vypište, kolik procent aut je značky Nissan
     }
 
-
     /**
-     * Vypíše základní statistiky o autech s pomocí summaryStatistics dle hodnoty "performance"
+     * Vypíše základní statistiky o autech pomocí {@code summaryStatistics}
+     * nad hodnotou {@code performance}.
+     *
      * @param cars seznam aut
      */
     private static void printStatistics(List<Car> cars) {
@@ -34,102 +35,62 @@ public class CarStream {
     }
 
     /**
-     * Vráti nový vyfiltrovaný seznam aut
-     * @param cars Seznam aut
-     * @param price Maximální cena (včetně) kterou mohou mít auta v novém seznamu
-     * @return Nový redukovaný seznam
+     * Vrátí nový vyfiltrovaný seznam aut.
+     *
+     * @param cars seznam aut
+     * @param price maximální cena (včetně), kterou mohou mít auta v novém seznamu
+     * @return nový vyfiltrovaný seznam aut
      */
     private static List<Car> filterByPrice(List<Car> cars, int price) {
         return null;
     }
 
     /**
-     * Vrátí průměrnou cenu za auto od firmy "brand"
+     * Vrátí průměrnou maximální rychlost aut od značky {@code brand}.
+     *
      * @param cars vstupní seznam aut
-     * @param brand Jméno firmy, která auto vyrábí (například Škoda)
-     * @return průměrnou cenu auta od firmy "brand"
+     * @param brand název značky auta (například Škoda)
+     * @return průměrná maximální rychlost aut dané značky
      */
-    private static double getAveragePrice(List<Car> cars, String brand) {
+    private static double getAverageTopSpeed(List<Car> cars, String brand) {
         return 0;
     }
 
     /**
-     * Načte všechny řádky (až na 1.) a vrátí jako seznam aut
+     * Načte všechny řádky souboru kromě prvního a vrátí je jako seznam aut.
+     *
      * @param path cesta k souboru
-     * @return Seznam aut
+     * @return seznam aut
      */
     public static List<Car> loadCars(String path){
         return null;
     }
+
+    /**
+     * Vrátí seznam aut dané značky, jejichž výkon je větší než zadaná mez.
+     *
+     * @param cars vstupní seznam aut
+     * @param brand název značky auta
+     * @param threshold minimální výkon, který musí auto překročit
+     * @return seznam aut dané značky s výkonem větším než {@code threshold}
+     */
+    public static List<Car> getCarsAbovePowerByBrand(List<Car> cars, String brand, int threshold) {
+
+    }
+
+    /**
+     * Vrátí procentuální zastoupení aut dané značky v seznamu.
+     * Výsledek je vrácen v procentech, například {@code 24.5}, nikoli {@code 0.245}.
+     *
+     * @param cars vstupní seznam aut
+     * @param brand název značky auta
+     * @return procentuální zastoupení aut dané značky v seznamu
+     */
+    public static double getBrandPercentage(List<Car> cars, String brand) {
+
+    }
 }
 
 class Car{
-    private String companyName;
-    private String carName;
-    private int horsePower;
-    private int totalSpeed;
-    private double performance;
-    private int priceUsd;
-
-    public Car(String companyName, String carName, int horsePower, int totalSpeed, double performance, int priceUsd) {
-        this.companyName = companyName;
-        this.carName = carName;
-        this.horsePower = horsePower;
-        this.totalSpeed = totalSpeed;
-        this.performance = performance;
-        this.priceUsd = priceUsd;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
-
-    public String getCarName() {
-        return carName;
-    }
-
-    public void setCarName(String carName) {
-        this.carName = carName;
-    }
-
-    public int getHorsePower() {
-        return horsePower;
-    }
-
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
-    }
-
-    public int getTotalSpeed() {
-        return totalSpeed;
-    }
-
-    public void setTotalSpeed(int totalSpeed) {
-        this.totalSpeed = totalSpeed;
-    }
-
-    public double getPerformance() {
-        return performance;
-    }
-
-    public void setPerformance(double performance) {
-        this.performance = performance;
-    }
-
-    public int getPriceUsd() {
-        return priceUsd;
-    }
-
-    public void setPriceUsd(int priceUsd) {
-        this.priceUsd = priceUsd;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Company: %s | Name: %s | HorsePower: %d | Total speed: %dkm/h | 0 - 100 km/h: %.2f | Price: $%d", companyName, carName, horsePower, totalSpeed, performance, priceUsd);
-    }
+    // TODO: Implement
 }
