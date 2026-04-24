@@ -4,8 +4,8 @@ import java.util.List;
 
 /**
  * 1. Načtěte soubor data/cars.csv
- * - přeskočte 1. řádek souboru
- * - všechny záznamy uložte do List<Car> cars
+ *    - přeskočte 1. řádek souboru
+ *    - všechny záznamy uložte do List<Car> cars
  * 2. Implementujte všechny metody
  */
 public class CarStream {
@@ -37,7 +37,7 @@ public class CarStream {
     /**
      * Vrátí nový vyfiltrovaný seznam aut.
      *
-     * @param cars  seznam aut
+     * @param cars seznam aut
      * @param price maximální cena (včetně), kterou mohou mít auta v novém seznamu
      * @return nový vyfiltrovaný seznam aut
      */
@@ -48,7 +48,7 @@ public class CarStream {
     /**
      * Vrátí průměrnou maximální rychlost aut od značky {@code brand}.
      *
-     * @param cars  vstupní seznam aut
+     * @param cars vstupní seznam aut
      * @param brand název značky auta (například Škoda)
      * @return průměrná maximální rychlost aut dané značky
      */
@@ -62,35 +62,35 @@ public class CarStream {
      * @param path cesta k souboru
      * @return seznam aut
      */
-    public static List<Car> loadCars(String path) {
+    public static List<Car> loadCars(String path){
         return null;
     }
 
     /**
      * Vrátí seznam aut dané značky, jejichž výkon je větší než zadaná mez.
      *
-     * @param cars      vstupní seznam aut
-     * @param brand     název značky auta
+     * @param cars vstupní seznam aut
+     * @param brand název značky auta
      * @param threshold minimální výkon, který musí auto překročit
      * @return seznam aut dané značky s výkonem větším než {@code threshold}
      */
     public static List<Car> getCarsAbovePowerByBrand(List<Car> cars, String brand, int threshold) {
-        return null;
+
     }
 
     /**
      * Vrátí procentuální zastoupení aut dané značky v seznamu.
      * Výsledek je vrácen v procentech, například {@code 24.5}, nikoli {@code 0.245}.
      *
-     * @param cars  vstupní seznam aut
+     * @param cars vstupní seznam aut
      * @param brand název značky auta
      * @return procentuální zastoupení aut dané značky v seznamu
      */
     public static double getBrandPercentage(List<Car> cars, String brand) {
-        return 0;
+
     }
 }
 
-class Car {
+class Car{
     // TODO: Implement
 }
