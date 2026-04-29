@@ -1,6 +1,6 @@
 package references;
 
-class      Duality {
+class Duality {
     int number;
 
     void work1() {
