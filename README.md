@@ -9,6 +9,8 @@ Basics:
  > sort (uz existujici
  > userInput - Scanner
  > final - vedet, co je konstanta
+
+
 OOP:
 Základy u objektů:
 -toString(), equals() [+hashCode()]
