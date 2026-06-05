@@ -1,7 +1,6 @@
 Summary pro látku:
 
 Odevzdani: .jar/pull request
---
 vsutpy: zip s daty + .java soubory, vytvořit vlastní project
 ---
 Látka:
