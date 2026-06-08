@@ -7,9 +7,9 @@ vsutpy: zip s daty + .java soubory, vytvořit vlastní project
 Látka:
 Basics: 
  zákadní operace s polem
- > sort (uz existujici)
- > userInput - Scanner
- > final - vedet, co je konstanta
+ - sort (uz existujici)
+ - userInput - Scanner
+ - final - vedet, co je konstanta
 
 
 OOP:
