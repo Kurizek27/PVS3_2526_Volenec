@@ -16,6 +16,7 @@ OOP:
 Základy u objektů:
 
 -toString(), equals() [+hashCode()]
+
 -Datum a práce s nim
 
 Konstruktory: přetěžování, this, static...
