@@ -24,9 +24,9 @@ Konstruktory: přetěžování, this, static...
 
 Dědičnost
 
-	- extends jednotlivých tříd
-	- přístupy
-	- použití super (=this, akorát pro předka)
+- extends jednotlivých tříd
+- přístupy
+- použití super (=this, akorát pro předka)
 	  
 Rozhraní/Interface:	
 
