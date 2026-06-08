@@ -22,9 +22,11 @@ Základy u objektů:
 Konstruktory: přetěžování, this, static...
 
 
-Dědičnost - extends jednotlivých tříd
-	  - přístupy
-	  - použití super (=this, akorát pro předka)
+Dědičnost
+
+	- extends jednotlivých tříd
+	- přístupy
+	- použití super (=this, akorát pro předka)
 	  
 Rozhraní/Interface:	
 
